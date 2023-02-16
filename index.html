@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penuine fashion</title>
+  <!-- font awesome icon -->
+  <script src="https://kit.fontawesome.com/f5a24ca635.js" crossorigin="anonymous"></script>
+  <!-- tailwind-->
+
+
+  <link rel="stylesheet" href="style.css">
+  <!-- tainwind custom color -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+
+  <!-- tainwind config file -->
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          xs: '480px',
+          sm: '768px',
+          sm: '992px',
+          lg: '1024px',
+          xl: '1440px',
+        },
+        screens: {
+          'tablet': '768px',
+          // => @media (max-width: 768px) { ... }
+
+          'laptop': '1024px',
+          // => @media (max-width: 1024px) { ... }
+
+          'desktop': '1280px',
+          // => @media (max-width: 1280px) { ... }
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            yellow: '#FABE4C',
+            headingcolor: '#363958',
+            btncolor: '#A4BC46',
+            pcolor: '#3E3E3E',
+            headerbg: '#e2e8f0',
+            transparent: transparent,
+            bannerbg: ' #FFFBF0;',
+
+
+
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- tailwind custom css file -->
+  <style type="text/tailwindcss">
+    @layer utilities {
+    .content-auto {
+      content-visibility: auto;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="bg-slate-200 py-8 px-12 ">
+    <div class="flex  items-center">
+      <div>
+        <a href="http://" target="_blank" rel="noopener noreferrer"
+          class="font-medium text-slate-700 uppercase">Navbar</a>
+
+
+      </div>
+      <div class="ml-auto">
+        <h3 class="text-base capitalize font-normal text-slate-700">main menu</h3>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- banner start -->
+  <section class="bg-orange-100 sm:py-10 sm:px-14 py-6 px-8">
+    <div class=" items-center flex flex-col-reverse sm:flex-row">
+      <div class="sm:px-20 px-6 mt-6 ">
+        <h2 class="sm:text-6xl text-4xl font-semibold text-yellow-400 capitalize">Be the Penguins
+          of Winter</h2>
+        <p class="text-base font-light text-zinc-600 mt-4">Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry.</p>
+        <button
+          class="rounded-sm capitalize bg-green-500 mt-4 hover:bg-rose-300 py-2 px-8 text-base font-normal text-white">buy
+          now</button>
+
+      </div>
+      <div>
+        <img class="w-full" src="images/model.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- women's jacket -->
+  <section class="bg-white py-8 lg:py-16">
+    <div class="container lg:px-20 px-8 sm:px-10 mx-auto">
+      <div class=" product_row flex sm:flex-row flex-wrap  ">
+        <div class="product_col  w-full  sm:w-1/2 sm:basis-1/2 lg:w-4/12 basis-full lg:basis-1/3 grow-0 shrink-0 ">
+          <div class="product-box mx-3 p-4 rounded-sm shadow-sm">
+            <div class="bg-slate-100 rounded-sm">
+              <img class=" w-full p-0 lg:p-3 " src=" images/jacket-2.png" alt="">
+            </div>
+            <h3 class="text-2xl font-medium text-slate-700 my-4">Yellow Coat Jacket </h3>
+            <p class>Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry.</p>
+            <div class="product_footer flex items-center">
+              <span class="product_price">$234</span>
+              <a href="http://" target="_blank" rel="noopener noreferrer"
+                class="bg-green-500 text-base font-normal text-white px-8 capitalize hover:bg-slate-400 hover:text-zinc-600 py-2 rounded-lg ml-auto">buy
+                now</a>
+            </div>
+          </div>
+        </div>
+        <div class="product_col  w-full  sm:w-1/2 sm:basis-1/2 lg:w-4/12 basis-full lg:basis-1/3 grow-0 shrink-0 ">
+          <div class="product-box mx-4  rounded-sm shadow-sm">
+            <img class="w-full" src="images/jacket-2.png" alt="">
+          </div>
+        </div>
+        <div class="product_col  w-full  sm:w-1/2 sm:basis-1/2 lg:w-4/12 basis-full lg:basis-1/3 grow-0 shrink-0  ">
+          <div class="product-box mx-4 rounded-sm shadow-sm">
+            <img class="w-full" src="images/jacket-2.png" alt="">
+          </div>
+        </div>
+
+      </div>
+  </section>
+</body>
+
+</html>
